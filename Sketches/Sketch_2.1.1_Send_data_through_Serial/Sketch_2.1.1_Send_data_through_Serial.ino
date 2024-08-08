@@ -1,10 +1,9 @@
-/*
-  Sketch 2.1.1
-  Send data through Serial
-
-  modified 2024/4/18
-  by http://www.freenove.com
-*/
+/**********************************************************************
+  Filename    : Sketch_6.1.1_Send_data_through_Serial
+  Description : Send data through Serial
+  Auther      : www.freenove.com
+  Modification: 2024/08/05
+**********************************************************************/
 
 int counter = 0;  // define a variable as a data sending to serial port
 

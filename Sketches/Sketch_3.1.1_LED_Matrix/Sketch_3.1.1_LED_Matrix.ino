@@ -1,17 +1,24 @@
-/*
-  Sketch 3.1.1
-  LED dot matrix display
+/**********************************************************************
+  Filename    : Sketch_18.1.1_LED_Matrix
+  Description : LED Matrix is onboard
+  Auther      : www.freenove.com
+  Modification: 2024/08/05
+**********************************************************************/
 
-  modified 2024/4/18
-  by http://www.freenove.com
-*/
 #include "Arduino_LED_Matrix.h"  // Include the LED_Matrix library
 
 ArduinoLEDMatrix matrix;  // Create an instance of the ArduinoLEDMatrix class
 
-void setup() {
-  matrix.begin();  // Initialize the LED matrix
-}
+byte frame[8][12] = {
+  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0 },
+  { 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0 },
+  { 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0 },
+  { 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0 },
+  { 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0 },
+  { 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0 },
+  { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0 }
+};
 
 const uint32_t fullOn[] = {
   0xffffffff,
@@ -23,9 +30,16 @@ const uint32_t fullOff[] = {
   0x00000000,
   0x00000000
 };
-void loop() {
+
+void setup() {
+  matrix.begin();  // Initialize the LED matrix
+  matrix.loadFrame(fullOn);
+  delay(250);
   matrix.loadFrame(fullOff);
   delay(250);
-  matrix.loadFrame(fullOn);
+}
+
+void loop() {
+  matrix.renderBitmap(frame, 8, 12);
   delay(250);
 }

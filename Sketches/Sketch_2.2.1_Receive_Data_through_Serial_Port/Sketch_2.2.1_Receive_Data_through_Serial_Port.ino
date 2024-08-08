@@ -1,10 +1,9 @@
-/*
-  Sketch 2.2.1
-  Receive Data through Serial Port
-
-  modified 2024/4/18
-  by http://www.freenove.com
-*/
+/**********************************************************************
+  Filename    : Sketch_6.2.1_Receive_Data_through_Serial_Port
+  Description : Receive Data through Serial Port
+  Auther      : www.freenove.com
+  Modification: 2024/08/05
+**********************************************************************/
 
 char inChar;      // define a variable to store characters received from serial port
 

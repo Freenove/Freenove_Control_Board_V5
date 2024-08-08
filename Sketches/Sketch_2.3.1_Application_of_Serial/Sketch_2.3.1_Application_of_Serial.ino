@@ -1,14 +1,13 @@
-/*
-  Sketch 2.3.1
-  Application of Serial
-
-  modified 2024/4/18
-  by http://www.freenove.com
-*/
+/**********************************************************************
+  Filename    : Sketch_6.3.1_Application_of_Serial
+  Description : Application of Serial
+  Auther      : www.freenove.com
+  Modification: 2024/08/05
+**********************************************************************/
 
 int inInt;        // define a variable to store the data received from serial
 int counter = 0;  // define a variable as the data sending to serial
-int ledPin = 13;  // the number of the LED pin
+int ledPin = 11;  // the number of the LED pin
 
 void setup() {
   pinMode(ledPin, OUTPUT);              // initialize the LED pin as an output

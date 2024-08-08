@@ -75,3 +75,4 @@ Other registered trademarks and their owners appearing in this repository:
 Arduino® is a trademark of Arduino LLC (https://www.arduino.cc/).  
 Raspberry Pi® is a trademark of Raspberry Pi Foundation (https://www.raspberrypi.org/).  
 micro:bit® is a trademark of Micro:bit Educational Foundation (https://www.microbit.org/).  
+Espressif® is a trademark of Espressif Systems (Shanghai) Co.Ltd (https://www.espressif.com/).
