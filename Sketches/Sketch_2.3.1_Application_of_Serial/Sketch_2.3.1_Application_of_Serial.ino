@@ -7,7 +7,7 @@
 
 int inInt;        // define a variable to store the data received from serial
 int counter = 0;  // define a variable as the data sending to serial
-int ledPin = 11;  // the number of the LED pin
+int ledPin = 13;  // the number of the LED pin
 
 void setup() {
   pinMode(ledPin, OUTPUT);              // initialize the LED pin as an output

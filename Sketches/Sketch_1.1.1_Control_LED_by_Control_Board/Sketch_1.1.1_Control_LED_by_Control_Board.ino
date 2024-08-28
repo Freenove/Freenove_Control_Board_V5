@@ -1,10 +1,9 @@
-/*
-  Sketch 1.1
-  Control LED by Control Board
-
-  modified 2024/4/18
-  by http://www.freenove.com
-*/
+/**********************************************************************
+  Filename    : Sketch_1.1.1_Control_LED_by_Control_Board
+  Description : Control LED by Control Board
+  Auther      : www.freenove.com
+  Modification: 2024/08/05
+**********************************************************************/
 
 // the setup function runs once when you press reset or power the board
 void setup() {
